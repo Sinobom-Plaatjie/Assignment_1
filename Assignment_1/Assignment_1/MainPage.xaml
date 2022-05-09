@@ -4,11 +4,13 @@
              x:Class="Assignment_1.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="black" Padding="2" CornerRadius="0">
-            <Label Text="Home Page!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="black" Padding="60" CornerRadius="0">
+            <Label Text="Home Page!" HorizontalTextAlignment="Center" TextColor="White" FontSize="35"/>
         </Frame>
         <StackLayout>
-            <Frame BackgroundColor ="Gray" Padding="300"></Frame>
+            <Frame BackgroundColor="DimGray" Padding="240" CornerRadius="0"></Frame>
+            <Button Text="Whatsapp" Clicked ="Button_Clicked" TextColor="Green" FontSize="Small"  CornerRadius="50" FontAttributes="Italic"> </Button>
+   
         </StackLayout>
     </StackLayout>
 
