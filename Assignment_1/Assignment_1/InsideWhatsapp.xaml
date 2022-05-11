@@ -4,9 +4,11 @@
              x:Class="Assignment_1.InsideWhatsapp">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="Green" Padding="35" >
+
+                <Label Text="WhatsApp" Padding="0" FontSize="Medium"/>
+                
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

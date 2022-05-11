@@ -8,7 +8,9 @@
             <Label Text="Home Page!" HorizontalTextAlignment="Center" TextColor="White" FontSize="35"/>
         </Frame>
         <StackLayout>
-            <Frame BackgroundColor="DimGray" Padding="240" CornerRadius="0"></Frame>
+            <Frame BackgroundColor="DimGray" Padding="240" CornerRadius="0">
+                <Image Source="wallpaer"/>
+            </Frame>
             <Button Text="Whatsapp" Clicked ="Button_Clicked" TextColor="Green" FontSize="Small"  CornerRadius="50" FontAttributes="Italic"> </Button>
    
         </StackLayout>

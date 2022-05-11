@@ -10,22 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Assignment_1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Whatsapp : ContentPage
+    public partial class TabbedPage1 : TabbedPage
     {
-        public Whatsapp()
+        public TabbedPage1()
         {
             InitializeComponent();
         }
-
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            await Task.Delay(5000);
-
-            await Navigation.PushAsync(new TabbedPage1());
-
-        }
-
     }
 }

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment_1.TabbedPage1">
+
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="30"/>
+                <RowDefinition Height ="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "10"/>
+                <ColumnDefinition Width = "5"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text= "&#x2315;" FontSize="Large" Grid.Column="4" Grid.Row="0" TextColor="White"/>
+            <Label Text= "&#x22EE;" FontSize="Large" Grid.Column="5" Grid.Row="0" TextColor="White"/>
+
+        </Grid>
+    </NavigationPage.TitleView>
+    <!--Pages can be added as references or inline-->
+    <ContentPage IconImageSource="camera.png"/>
+    <ContentPage Title="CHATS" />
+    <ContentPage Title="STATUS" />
+    <ContentPage Title="CALLS" />
+</TabbedPage>
