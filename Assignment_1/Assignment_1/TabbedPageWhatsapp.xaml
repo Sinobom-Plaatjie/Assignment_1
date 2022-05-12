@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Assignment_1.TabbedPage1">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:assignment_1="clr-namespace:Assignment_1"
+            x:Class="Assignment_1.TabbedPage1" >
 
-    <NavigationPage.TitleView>
+   <NavigationPage.TitleView>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height ="30"/>
@@ -21,8 +21,8 @@
         </Grid>
     </NavigationPage.TitleView>
     <!--Pages can be added as references or inline-->
-    <ContentPage IconImageSource="camera.png"/>
-    <ContentPage Title="CHATS" />
-    <ContentPage Title="STATUS" />
-    <ContentPage Title="CALLS" />
+    <assignment_1:cameraMode IconImageSource="camera.png"/>
+    <assignment_1:ChatsPage Title="CHATS"/>
+    <assignment_1:Status Title="STATUS" />
+    <assignment_1:Calls Title="CALLS" />
 </TabbedPage>

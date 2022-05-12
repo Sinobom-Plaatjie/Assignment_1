@@ -24,6 +24,7 @@ namespace Assignment_1
             await Task.Delay(5000);
 
             await Navigation.PushAsync(new TabbedPage1());
+            
 
         }
 

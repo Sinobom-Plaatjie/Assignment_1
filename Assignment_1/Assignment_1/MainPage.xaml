@@ -3,15 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Assignment_1.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="black" Padding="60" CornerRadius="0">
+        <StackLayout>
+        <Frame BackgroundColor="black" Padding="20" CornerRadius="0">
             <Label Text="Home Page!" HorizontalTextAlignment="Center" TextColor="White" FontSize="35"/>
         </Frame>
         <StackLayout>
-            <Frame BackgroundColor="DimGray" Padding="240" CornerRadius="0">
-                <Image Source="wallpaer"/>
-            </Frame>
-            <Button Text="Whatsapp" Clicked ="Button_Clicked" TextColor="Green" FontSize="Small"  CornerRadius="50" FontAttributes="Italic"> </Button>
+
+            <Image Source="wallpaer.png" HeightRequest="530"/>
+            <Button ImageSource="whatsappHh.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  Clicked ="Button_Clicked" TextColor="Green" CornerRadius="0" > </Button>
    
         </StackLayout>
     </StackLayout>

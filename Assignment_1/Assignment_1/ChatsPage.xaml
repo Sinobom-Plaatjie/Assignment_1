@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local ="clr-namespace:Assignment_1"
+             x:Class="Assignment_1.ChatsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView Margin ="5,5">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type local:chats}">
+                        <local:chats Picture="profile.png" Name="Sino" Message ="Morning Friend I miss you" Lastseen ="16:00"/>
+                        <local:chats Name=" Zam" Message = "Thank you" Lastseen ="17:59"/>
+                        <local:chats Name=" Ishmael" Message = "Goodnight" Lastseen ="06:00"/>
+                        <local:chats Name=" Asiphe" Message = "???" Lastseen ="15:00"/>
+                        <local:chats Name=" Sinobom" Message = "Call me now please" Lastseen ="16:00"/>
+                        <local:chats Name=" Zameka" Message = " Morning Sir" Lastseen ="17:59"/>
+                        <local:chats Name=" Chad" Message = "Pleasure " Lastseen ="01:00"/>
+                        <local:chats Name=" Luke" Message = "HeY " Lastseen = "05:40"/>
+                        <local:chats Name=" Sam" Message = "GOODBYE " Lastseen ="16:00"/>
+                        <local:chats Name=" Jetta" Message = "Friday" Lastseen ="11:59"/>
+                        <local:chats Name=" Heas" Message = "Pleasure " Lastseen ="06:00"/>
+                        <local:chats Name=" Rahdee" Message = "Pleasure " Lastseen ="15:00"/>
+                        <local:chats Name=" Samntha" Lastseen ="16:00"/>
+                        <local:chats Name=" Justina" Lastseen ="17:59"/>
+                        <local:chats Name=" Max" Lastseen ="01:00"/>
+                        
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="13,0"
+                             Orientation="Horizontal">
+                                <StackLayout VerticalOptions="Center"
+                                                  Spacing="3">
+                                    
+                                    <Image Source ="{Binding Picture}" HorizontalOptions="End" />
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="15"/>
+                                    <Label Text="{Binding Message}" FontAttributes="Bold" FontSize="14"/>
+                                    <Label Text="{Binding Lastseen, StringFormat='Lastseen {0:t}'}" HorizontalOptions="End" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
